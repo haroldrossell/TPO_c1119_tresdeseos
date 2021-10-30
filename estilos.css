@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+
+* {
+  margin: 0px;
+
+  font-family: "Berkshire Swash", cursive;
+}
+
+.inicio {
+  background-color: #c9e265;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#carouselExampleIndicators {
+  margin: 10px 320px 10px 320px;
+}
+
+body {
+  padding: 30px;
+  background-color: #a3feff;
+}
+#menu-primary {
+  background-color: #ff66c4;
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.nuestros_productos {
+  text-align: center;
+}
+
+#container-globos {
+  overflow: hidden;
+  border-bottom: 30px #ff66c4 solid;
+}
+
+#globos {
+  margin-top: 30px;
+  background-image: url(img/globos.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 800px;
+}
+
+#container-globos:hover #globos {
+  margin-left: 100%;
+  transition: all 2s;
+
+}
+
+/* GRID */
+
+.grid-container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 400px 400px 400px;
+  place-items: center;
+  border-style: none;
+  margin: 30px 320px 0px 320px;
+}
+
+.grid-container div {
+  border-style: solid;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  place-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+}
+
+a {
+  font-size: 20px;
+  color: black;
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+.menu li a:hover {
+  background-color: #ff66c4;
+  border-radius: 20px;
+}
+
+.formulario {
+  padding-top: 10px;
+  background-color: #c9e265;
+  border-radius: 20px;
+}
+
+.sobre_nosotros {
+  background-color: #c9e265;
+}
+
+.sociales h2 {
+  margin-top: 150px;
+  text-align: center;
+}
+.redes {
+  height: 50px;
+  text-align: center;
+}
+
+.mapa {
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: #c9e265;
+  }
+  #menu-primary {
+    background-color: #a3feff;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    background-color: #ff66c4;
+  }
+  #menu-primary {
+    background-color: yellow;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  body {
+    background-color: yellow;
+  }
+  #menu-primary {
+    background-color: #c9e265;
+  }
+}
