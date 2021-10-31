@@ -143,4 +143,31 @@ a {
   #menu-primary {
     background-color: #c9e265;
   }
+  
+  .mapa {
+    height: 450px;
+    width: auto;
+  }
+
+  .grid-container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    place-items: center;
+    border-style: none;
+    margin: auto;
+    padding: auto;
+  }
+
+  .grid-container div{
+    height: 100px;
+    width: 100px;
+  }
+
+  #img {
+    height: 100px;
+    width: 100px;
+  }
 }
